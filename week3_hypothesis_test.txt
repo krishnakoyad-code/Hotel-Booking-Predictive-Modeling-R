@@ -1,0 +1,10 @@
+              
+                   0     1
+  City Hotel   37237 16034
+  Resort Hotel 25976  7974
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  hotel_cancel_table
+X-squared = 454.01, df = 1, p-value < 2.2e-16
+

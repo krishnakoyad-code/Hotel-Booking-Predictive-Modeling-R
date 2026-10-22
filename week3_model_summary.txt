@@ -1,0 +1,43 @@
+
+Call:
+glm(formula = is_canceled ~ ., family = binomial(link = "logit"), 
+    data = train_data)
+
+Coefficients:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    -2.479e+00  2.081e-01 -11.912  < 2e-16 ***
+lead_time                       5.406e-03  1.202e-04  44.985  < 2e-16 ***
+adr                             4.475e-03  2.196e-04  20.372  < 2e-16 ***
+adults                          8.304e-02  1.728e-02   4.805 1.54e-06 ***
+children                        9.753e-02  2.143e-02   4.551 5.34e-06 ***
+babies                          2.880e-01  9.242e-02   3.116  0.00183 ** 
+previous_cancellations          1.870e+00  7.581e-02  24.663  < 2e-16 ***
+previous_bookings_not_canceled -3.832e-01  2.690e-02 -14.244  < 2e-16 ***
+booking_changes                -3.341e-01  1.817e-02 -18.392  < 2e-16 ***
+days_in_waiting_list           -2.134e-03  1.094e-03  -1.952  0.05099 .  
+required_car_parking_spaces    -2.893e+01  6.275e+01  -0.461  0.64483    
+total_of_special_requests      -6.659e-01  1.359e-02 -49.008  < 2e-16 ***
+hotelResort Hotel               1.048e-01  2.082e-02   5.035 4.78e-07 ***
+deposit_typeNon Refund          3.919e+00  1.840e-01  21.295  < 2e-16 ***
+deposit_typeRefundable          3.593e-01  2.938e-01   1.223  0.22140    
+customer_typeGroup             -2.810e-01  1.950e-01  -1.441  0.14967    
+customer_typeTransient          6.493e-01  6.241e-02  10.404  < 2e-16 ***
+customer_typeTransient-Party   -7.042e-02  7.176e-02  -0.981  0.32645    
+market_segmentComplementary     3.536e-01  2.415e-01   1.464  0.14313    
+market_segmentCorporate        -1.050e-01  2.063e-01  -0.509  0.61080    
+market_segmentDirect           -3.262e-01  2.004e-01  -1.628  0.10360    
+market_segmentGroups           -1.670e-01  2.072e-01  -0.806  0.42039    
+market_segmentOffline TA/TO    -7.875e-01  2.008e-01  -3.921 8.80e-05 ***
+market_segmentOnline TA         7.976e-01  1.985e-01   4.019 5.85e-05 ***
+market_segmentUndefined         2.085e+01  2.774e+03   0.008  0.99400    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 82207  on 69775  degrees of freedom
+Residual deviance: 65577  on 69751  degrees of freedom
+AIC: 65627
+
+Number of Fisher Scoring iterations: 16
+
